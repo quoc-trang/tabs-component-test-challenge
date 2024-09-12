@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  @apply h-screen flex items-center justify-center gap-3;
+}
+
+.tabs {
+  @apply w-96 max-w-full;
+}
+
+.tab-trigger-wrapper {
+  @apply flex gap-1 border-b-gray-400 border-b;
+}
+
+.tab-trigger {
+  @apply border border-gray-400 px-3 py-1 rounded-t-sm border-b-0;
+}
+
+.tab-content-wrapper {
+  @apply border border-gray-400 rounded-b-sm border-t-0 p-5;
+}
+
+.tab-trigger.active {
+  @apply bg-gray-200;
+}
